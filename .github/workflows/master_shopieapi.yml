@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'shopieapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_97998DF4EB944417A07E373D2743E432 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4189816E2D79453FAC28CE8E30FEA6A7 }}
           package: .
