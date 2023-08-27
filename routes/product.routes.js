@@ -7,6 +7,8 @@ import getProduct from "../controllers/product.controllers/getProduct.js";
 import createOrder from "../controllers/product.controllers/createOrder.js";
 import fetchAllOrders from "../controllers/product.controllers/fetchAllOrders.js";
 import getOrder from "../controllers/product.controllers/getOrder.js";
+import paypalCreateOrder from "../controllers/product.controllers/paypalCreateOrder.js";
+import paypalCaptureOrder from "../controllers/product.controllers/paypalCaptureOrder.js";
 const productRouter = Router();
 productRouter.get("/", fetchProducts);
 productRouter.get("/:id", getProduct);
@@ -16,4 +18,5 @@ productRouter.post("/order", createOrder);
 productRouter.put("/update/:id", updateProduct);
 productRouter.delete("/:id", deleteProduct);
 productRouter.get("/orders", fetchAllOrders);
+
 export default productRouter;
